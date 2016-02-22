@@ -6,5 +6,6 @@ plot3 <- function() {
   lines(x, mydf$Sub_metering_1, ylab = "Energy Sub metering", xlab = "")
   lines(x, mydf$Sub_metering_2, col = "red", ylab = "Energy Sub metering", xlab = "")
   lines(x, mydf$Sub_metering_3, col = "blue", ylab = "Energy Sub metering", xlab = "")
+  legend("topright",col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = 1)
   dev.off()
 }
